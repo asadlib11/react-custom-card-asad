@@ -1,5 +1,8 @@
 ## Npm package creation example
 This project is a sample implementation of how to create your npm package and publish it
+
+## https://www.npmjs.com/package/react-custom-card-asad
+
 ### Steps
 1. Create react project
 2. Install babel transpiler as devdependancy:
