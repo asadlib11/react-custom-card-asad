@@ -1,3 +1,26 @@
+## Npm package creation example
+This project is a sample implementation of how to create your npm package and publish it
+### Steps
+1. Create react project
+2. Install babel transpiler as devdependancy:
+    npm install --save-dev @babel/cli @babel/preset-react
+3. Create components in /src 
+4. Change followings in package.json:
+    a.  Change private to false
+    b.  add following script "publish:npm": "rm -rf dist && mkdir dist &&  babel src/components -d dist --copy-files",
+    c.  add babel: 
+          "babel": {
+            "presets": [
+                "@babel/preset-react"
+                ]
+            },
+5. Now perform following operations:
+    a.  npm login
+    b.  npm run publish:npm
+    c.  npm publish
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
